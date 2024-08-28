@@ -25,7 +25,7 @@ int main(void)
 
         for (int i = 0; i < NUM_BANDS; i++)
         {
-            bands[i] = fabs(sinf((2.0f * PI * i / NUM_BANDS) + (time * SPEED))) * AMPLITUDE;
+            bands[i] = fabs(sinf((1.0f * PI * i / NUM_BANDS) + (time * SPEED))) * AMPLITUDE;
         }
 
         BeginDrawing();
