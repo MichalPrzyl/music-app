@@ -35,7 +35,7 @@ int main(void)
         {
             float x = (800 / NUM_BANDS) * i;
             float height = bands[i];
-            DrawRectangle(x, 600 - height, (800 / NUM_BANDS) - 2, height, GREEN);
+            DrawRectangle(x, 600 - height, (800 / NUM_BANDS) - 2, height, i%2==0 ? RED : GREEN);
         }
 
         DrawText("Playing audio... Press ESC to exit", 190, 550, 20, LIGHTGRAY);
